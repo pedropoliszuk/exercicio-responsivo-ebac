@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f7f0f0bd;
+}
+
+header {
+    background-color: #0044ffe3;
+    padding: 16px;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+main img {
+    max-width: 400px;
+    margin: 20px 20px 0 0;
+}
+
+.conteudo-main {
+    flex-direction: column;
+}
+
+h2 {
+    color: #0044ffe3;
+    margin: 30px 0;
+    padding: 0 0 10px 10px;
+    border-bottom: 1px solid #0044ffe3;
+    font-style: italic;
+}
+
+section {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+section img {
+    max-width: 200px;
+}
+
+section button {
+    padding: 12px;
+    color: #fff;
+    background-color:  #0044ffe3;
+    border: none;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.container-flex,
+.li-flex {
+    display: flex;
+}
+
+.lista-itens li {
+    list-style: none;
+}
+
+.lista-itens li h3 {
+    margin: 12px 0;
+}
+
+.lista-itens li p {
+    font-size: 14px;
+    padding: 12px 0;
+}
+
+@media screen and (max-width: 640px) {
+    header > .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .container {
+        display: block;
+        width: 90%;
+    }
+    
+    .container img {
+        margin: 20px;
+        width: 90%;
+        height: 280px;
+    }
+
+    .lista-itens,
+    .li-flex {
+        display: block;
+    }
+
+    .lista-itens img,
+    .lista-itens button {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .li-flex {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
